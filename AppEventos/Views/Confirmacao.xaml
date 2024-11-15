@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEventos.Views.Confirmacao"
+             Title="Confirmacao"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Background>
+
+        <LinearGradientBrush  EndPoint="1,1">
+
+            <GradientStop Color="White" Offset="0.5" />
+
+
+
+            <GradientStop Color="Aqua" Offset="1"/>
+
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <VerticalStackLayout >
+        <Label Text="Confirme os Dados"
+              FontSize="Title"
+               HorizontalTextAlignment="Center"
+               />
+
+        <Frame Padding="10" Margin="10">
+            <StackLayout> 
+            <VerticalStackLayout HorizontalOptions="CenterAndExpand" Padding="10" Margin="10">
+                <Label
+  FontSize="Micro"  Text="Nome do Evento: " />
+                <Label Text= ""/>
+
+                    <Label FontSize="Micro" Text="Local do Evento: "/>
+                <Label Text=""/>
+
+                    <Label FontSize="Micro" Text="Data Inícil: "/>
+                    <Label Text="{Binding DataIni, StringFormat='{}{0:dd/MM/yyyy}'}"
+                           />
+                    
+
+
+                    <Label FontSize="Micro" Text="Data Término: "/>
+                        <Label Text="{Binding DataTermino, StringFormat='{}{0:dd/MM/yyyy}'}"/>
+                    
+
+                    <Label FontSize="Micro" Text="Duração do Evento: "/>
+                <Label Text="{Binding Duracao}" />
+
+                <Label FontSize="Micro" Text="Número de Participantes: "/>
+                    <Label Text="{Binding NumParticipantes}"/>
+
+                    <Label FontSize="Micro" Text="Custo Total:"/>
+                <Label Text="{Binding CustoTotal}"/>
+
+                <Button Text="Salvar Evento" HorizontalOptions="Center"/>
+                
+            </VerticalStackLayout>
+            </StackLayout>
+
+
+        </Frame>
+    </VerticalStackLayout>
+   
+
+</ContentPage>

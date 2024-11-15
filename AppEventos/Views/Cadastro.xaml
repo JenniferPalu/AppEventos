@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEventos.Views.Cadastro"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Background>
+
+        <LinearGradientBrush  EndPoint="1,1">
+
+            <GradientStop Color="White" Offset="0.5" />
+
+
+
+            <GradientStop Color="Aqua" Offset="1"/>
+
+
+
+        </LinearGradientBrush>
+
+
+
+    </ContentPage.Background>
+
+
+
+    <VerticalStackLayout HorizontalOptions="CenterAndExpand" Padding="10">
+
+        <Button Text="Voltar" Clicked="Button_Clicked" HorizontalOptions="Center" />
+
+
+
+        <Label Text="Cadastro" 
+
+               FontSize="Title"/>
+
+        <Label Text="Preencha todos os campos" 
+
+        FontSize="Body"/>
+
+
+
+        <Label Text="Nome do Evento: "/>
+
+        <Entry Text="{Binding NomeEvento, Mode=TwoWay}"/>
+
+
+
+        <Label Text="Local do Evento: "/>
+
+        <Entry Text="{Binding LocalEvento, Mode=TwoWay}"/>
+
+
+
+        <HorizontalStackLayout >
+
+            <Label Text="Data Início: "/>
+
+            <DatePicker x:Name="dt_ini" 
+
+                        Format="dd/MM/yyyy"/>
+
+
+
+            <Label Text="Data Término: "/>
+
+            <DatePicker x:Name="dt_ter" 
+
+                        Format="dd/MM/yyyy"/>
+
+
+
+        </HorizontalStackLayout>
+
+
+
+        <Label Text="Número de Participantes: "/>
+
+        <Entry x:Name="num_part" Keyboard="Numeric"/>
+
+
+        <Label Text="Custo por Participante: "/>
+
+        <Entry x:Name="custo_part" Placeholder="Ex: 180,50"
+          Keyboard="Numeric"/>
+
+
+
+        <Button Margin="10" 
+
+              Clicked="Button_Clicked_1"  
+
+                Text="Avancar" HorizontalOptions="Center"/>
+
+    </VerticalStackLayout>
+</ContentPage>

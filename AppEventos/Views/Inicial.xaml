@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEventos.Views.Inicial"
+             Title="Inicial"
+            NavigationPage.HasNavigationBar="False">
+   
+
+
+    <ContentPage.Background>
+
+        <LinearGradientBrush  EndPoint="1,1">
+
+            <GradientStop Color="White" Offset="0.5" />
+
+
+
+            <GradientStop Color="Aqua" Offset="1"/>
+
+
+
+        </LinearGradientBrush>
+
+    </ContentPage.Background>
+
+
+    <VerticalStackLayout VerticalOptions="StartAndExpand">
+
+        <Label Text="Star Salon" HorizontalOptions="Center" 
+
+               TextTransform="Uppercase" 
+
+               FontAttributes="Italic" 
+
+               FontSize="Title" 
+
+               Padding="20" />
+
+
+        <Border Stroke="Black" 
+
+                StrokeThickness="1" 
+
+                HorizontalOptions="Center" 
+
+                VerticalOptions="Center" 
+
+                Padding="10">
+
+            <Label Text="O local ideal para os seus eventos brilharem." />
+
+        </Border>
+
+
+        <StackLayout Orientation="Vertical" Padding="50">
+
+            <Label Text="Para cadastrar eventos, basta preencher um breve formulário" 
+
+    Padding="20" 
+
+    VerticalOptions="Center" 
+
+    HorizontalOptions="Center" 
+/>
+
+        </StackLayout>
+
+        <Button Text="Iniciar" 
+
+                HorizontalOptions="Center" 
+
+                Clicked="Button_Clicked"/>
+
+
+    </VerticalStackLayout>
+
+</ContentPage>
