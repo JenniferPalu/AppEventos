@@ -8,13 +8,15 @@ namespace AppEventos.Models
 {
     public class Dados
     {
+        public string? Local { get; set;}
+        public string? Nome { get; set;}
         public Double NumParticipantes { get; set;}
         public Double Custo { get; set; }
         public DateTime DataIni { get; set; }
         public DateTime DataTermino { get; set; }
         public int Duracao
         {
-            get => DataIni.Subtract(DataTermino).Days;
+            get => DataTermino.Subtract(DataIni).Days + 1;
         }
 
         public double CustoTotal

@@ -42,13 +42,13 @@
 
         <Label Text="Nome do Evento: "/>
 
-        <Entry Text="{Binding NomeEvento, Mode=TwoWay}"/>
+        <Entry Text="{Binding Nome}" />
 
 
 
         <Label Text="Local do Evento: "/>
 
-        <Entry Text="{Binding LocalEvento, Mode=TwoWay}"/>
+        <Entry Text="{Binding Local}" />
 
 
 
@@ -76,7 +76,7 @@
 
         <Label Text="Número de Participantes: "/>
 
-        <Entry x:Name="num_part" Keyboard="Numeric"/>
+        <Entry Text="{Binding NumParticipantes}"/>
 
 
         <Label Text="Custo por Participante: "/>

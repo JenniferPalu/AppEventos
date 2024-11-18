@@ -26,9 +26,7 @@ public partial class Cadastro : ContentPage
             {
                 DataIni = dt_ini.Date,
                 DataTermino = dt_ter.Date,
-                NumParticipantes = Convert.ToInt32(num_part),
-                Custo = Convert.ToInt32(custo_part),
-
+               
             };
             
            await Navigation.PushAsync(new Confirmacao()

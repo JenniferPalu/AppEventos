@@ -29,10 +29,10 @@
             <VerticalStackLayout HorizontalOptions="CenterAndExpand" Padding="10" Margin="10">
                 <Label
   FontSize="Micro"  Text="Nome do Evento: " />
-                <Label Text= ""/>
+                    <Label Text= "{Binding Nome}"/>
 
                     <Label FontSize="Micro" Text="Local do Evento: "/>
-                <Label Text=""/>
+                    <Label Text="{Binding Local}"/>
 
                     <Label FontSize="Micro" Text="Data Inícil: "/>
                     <Label Text="{Binding DataIni, StringFormat='{}{0:dd/MM/yyyy}'}"
@@ -51,9 +51,9 @@
                     <Label Text="{Binding NumParticipantes}"/>
 
                     <Label FontSize="Micro" Text="Custo Total:"/>
-                <Label Text="{Binding CustoTotal}"/>
+                <Label Text=""/>
 
-                <Button Text="Salvar Evento" HorizontalOptions="Center"/>
+                <Button Text="Salvar Evento" Clicked="Button_Clicked" HorizontalOptions="Center"/>
                 
             </VerticalStackLayout>
             </StackLayout>
